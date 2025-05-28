@@ -1,3 +1,8 @@
--name: Hello World
+-name: hello world
 host: local
 connection: local
+tasks: 
+- name: print hello world
+  ansiblle.builtin.debug:
+    msg: "Hello World"
+
