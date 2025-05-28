@@ -6,9 +6,14 @@
     COURSE: DevSecOps with AWS
     DURATION: 120hrs
   tasks:
+
   - name: print my details
     vars:
       NAME: Priyanka
+    ansible.builtin.debug:
+      msg: "Hello, my name is {{ NAME }}, I am learning {{ COURSE }}, course duration is {{ DURATION }}"
+
+  - name: print my details
     ansible.builtin.debug:
       msg: "Hello, my name is {{ NAME }}, I am learning {{ COURSE }}, course duration is {{ DURATION }}"
 
