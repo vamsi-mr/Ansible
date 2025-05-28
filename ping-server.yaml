@@ -1,6 +1,5 @@
 - name: ping the server
-  hosts: local
-  connection: local
+  hosts: frotend
   tasks: # list of tasks
   - name: ping the server
     ansible.builtin.ping:
