@@ -1,0 +1,6 @@
+name: ping the server
+host: frontned
+task:
+  -name: ping the server
+  ansible.builtin.ping:
+  msg: "Server is pinging"
