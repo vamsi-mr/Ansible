@@ -11,10 +11,12 @@
     vars:
       NAME: Priyanka
     ansible.builtin.debug:
+    #Since we have defined the variable in this task, it overrides the Gloabl variable play level
       msg: "Hello, my name is {{ NAME }}, I am learning {{ COURSE }}, course duration is {{ DURATION }}"
 
   - name: print my details
     ansible.builtin.debug:
+    #Global variables from the play level is taken here since we didn't override the variable here
       msg: "Hello, my name is {{ NAME }}, I am learning {{ COURSE }}, course duration is {{ DURATION }}"
 
   
