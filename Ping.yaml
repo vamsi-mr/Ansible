@@ -3,4 +3,3 @@ host: frontend
 task:
   -name: ping the server
   ansible.builtin.ping:
-  msg: "Server is pinging"
