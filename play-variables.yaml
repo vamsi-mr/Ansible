@@ -1,0 +1,11 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars: 
+    NAME: Mohan Vamsi
+    COURSE: DevSecOps with AWS
+    DURATION: 120hrs
+  tasks:
+  - name: print my details
+    ansible.builtin.debug:
+      msg: "Hello, my name is {{ NAME }}, I am learning {{ COURSE }} course {{ DURATION }}"
