@@ -1,9 +1,7 @@
 - name: hello world
-  host: local
-  connection: local
-  become: yes
-  tasks: 
+  hosts: local
+  connection: local # no need of username and password
+  tasks:
   - name: print hello world
-    ansiblle.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hello World"
-
