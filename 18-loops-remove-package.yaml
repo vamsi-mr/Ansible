@@ -8,7 +8,7 @@
       name: "{{ item }}"
       state: present
     loop:
-    - mysql
+    - nginx
     - zip
 
   - name: remove package
@@ -16,6 +16,6 @@
       name: "{{ item }}"
       state: absent
     loop:
-    - nginx
+    - mysql
     - zip
     
