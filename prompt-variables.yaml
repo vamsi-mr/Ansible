@@ -1,7 +1,6 @@
 - name: variables from prompt
   hosts: local
   commection: local
-  -tasks:
   vars_prompt:
   - name: USERNAME
     prompt: Please enter your username
