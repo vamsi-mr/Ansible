@@ -16,8 +16,17 @@
       state: started
       enabled: yes
 
+      
+
   - name: install nginx if Debian
     ansible.builtin.package:
       name: nginx
       state: present
     when: ansible_os_family == "Debian"
+
+  - name: Enable and Start Nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+  
