@@ -8,5 +8,6 @@
       name: "{{ item }}"
       state: present
     loop:
+    - nginx
     - mysql
     - zip
