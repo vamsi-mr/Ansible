@@ -3,11 +3,11 @@
   commection: local
   -tasks:
   vars_prompt:
-    -name: USERNAME
+  - name: USERNAME
     prompt: Please enter your username
     private: true
 
-    -name: PASSWORD 
+  - name: PASSWORD 
     prompt: Please enter your password
     private: true
 
