@@ -1,4 +1,4 @@
-- name : ansible conditions
+- name: ansible conditions
   hosts: local
   connection: local
   vars: 
