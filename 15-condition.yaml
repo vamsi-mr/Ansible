@@ -1,6 +1,6 @@
 - name: playbook control using ansible facts
   hosts: frontend
-  becomes: yes
+  become: yes
 
   tasks:
 
