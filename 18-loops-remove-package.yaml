@@ -3,7 +3,7 @@
   connection: local
   become: yes
   tasks:
-  - name: install package
+  - name: install and remove package
     ansible.builtin.package:
       name: "{{ item.name }}"
       state: "{{ item.state }}"
