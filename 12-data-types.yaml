@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    DURATION: 120hrs # number, int
+    DURATION: 120 # number, int
     COURSE: "DevSecOps with AWS" # string
     IS_LIVE: true # boolean
     TOOLS: #List referred like []
@@ -15,4 +15,4 @@
   tasks: 
   - name: print course information 
     ansible.builtin.debug:
-      msg: "Course is {{ CONCEPTS }}, Duration: {{ DURATION }}, IS_LIVE: {{ IS_LIVE }}, TOOLS are : {{ TOOLS }}, Concepts are : {{ CONCEPTS }}"
+      msg: "Course is {{ COURSE }}, Duration: {{ DURATION }}, IS_LIVE: {{ IS_LIVE }}, TOOLS are : {{ TOOLS }}, Concepts are : {{ CONCEPTS }}"
