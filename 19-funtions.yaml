@@ -23,6 +23,6 @@
       name: DevSecOps
       duration: 120HR
     ansible.builtin.debug:
-      msg: "Course info: {{ course | dict2item }}"
+      msg: "Course info: {{ course | dict2items }}"
 
       
