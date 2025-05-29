@@ -5,7 +5,7 @@
     NUMBER: 99
   tasks:
   - name: print if the number is less than 100
-    ansible,builtin.debug:
+    ansible.builtin.debug:
       msg: "Given number {{ NUMBER }} is less than or equal to 100"
     when: NUMBER <= 100
 
