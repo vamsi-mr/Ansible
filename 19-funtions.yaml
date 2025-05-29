@@ -3,6 +3,7 @@
   connection: local
   vars:
     persons: "Ramesh,Suresh,Raheem,Joseph"
+
   tasks:
   - name: check undefined variable
     ansible.builtin.debug:
@@ -15,4 +16,11 @@
   - name: print names by splitting
     ansible.builtin.debug:
       msg: "Hello, {{ persons | split (',') }}"
+
+  - name: convert map into list
+    vars:
+      course: DevSecOps
+      duration: 120
+    ansible.builtin.debug:
+      msg: "Hello, {{ persons | dict2item }}"
       
