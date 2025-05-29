@@ -10,7 +10,7 @@
     - Shell
     - Ansible
     CONCEPTS: #map or dictonary or object, referred like {}
-      CI: 
+      CI: Jenkins
       SCRIPTING: "Shell, Ansible, Terrafrom"
   tasks: 
   - name: print course information 
