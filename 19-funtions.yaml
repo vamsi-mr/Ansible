@@ -8,6 +8,9 @@
     ansible.builtin.debug:
       msg: "Hello, {{ person | default('Ramesh') }}"
 
+  - name: check undefined variable
+    ansible.builtin.debug:
+      msg: "Hello, {{ persons }}"
   
   - name: print names by splitting
     ansible.builtin.debug:
