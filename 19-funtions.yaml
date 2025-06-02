@@ -28,8 +28,8 @@
   - name: convert list into map
     vars:
       TOOLS: 
-      - Ansible
-      - Terraform
-      - Jenkins
+      - {'key': 'name', 'value': 'Ansible'}
+      - {'key': 'name', 'value': 'Terraform'}
+      - {'key': 'name', 'value': 'Jenkins'}
     ansible.builtin.debug:
       msg: "Tools used are: {{ TOOLS | items2dict }}"
