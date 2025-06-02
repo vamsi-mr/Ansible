@@ -33,3 +33,9 @@
       - {'key': 'name2', 'value': 'Jenkins'}
     ansible.builtin.debug:
       msg: "Tools used are: {{ TOOLS | items2dict }}"
+
+  - name: convert lower to uppercase
+    vars:
+      name: mohan vamsi Ravada
+    ansible.builtin.debug:
+      msg: "Hello, {{ name | upper}}"
