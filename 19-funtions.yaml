@@ -25,4 +25,11 @@
     ansible.builtin.debug:
       msg: "Course info: {{ course | dict2items }}"
 
-      
+  - name: convert list into map
+    vars:
+      TOOLS: 
+      - Ansible
+      - Terraform
+      - Jenkins
+    ansible.builtin.debug:
+      msg: "Tools used are: {{ TOOLS | items2dict }}"
