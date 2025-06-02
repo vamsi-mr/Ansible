@@ -29,7 +29,7 @@
     vars:
       TOOLS: 
       - {'key': 'name', 'value': 'Ansible'}
-      - {'key': 'name', 'value': 'Terraform'}
-      - {'key': 'name', 'value': 'Jenkins'}
+      - {'key': 'name1', 'value': 'Terraform'}
+      - {'key': 'name2', 'value': 'Jenkins'}
     ansible.builtin.debug:
       msg: "Tools used are: {{ TOOLS | items2dict }}"
