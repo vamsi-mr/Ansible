@@ -2,6 +2,15 @@
   hosts: local
   connection: local
   tasks:
+
+  - name: show the output of a command
+    ansible.builtin.shell: "ls -ltr"
+    register: command_result
+
+  - name: print the outcome
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
+
   - name: redirect ls output to a file
     ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
     register: command_result
